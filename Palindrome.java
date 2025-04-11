@@ -3,8 +3,11 @@ import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String[] args) {
+        // INISIALISASI
         Scanner masukan = new Scanner(System.in);
         String inputan;
+        TextGame game = new FancyTextGame();
+        boolean lanjutin = true;
 
         // PESAN PEMBUKA
         System.out.println("-------------------------------------------");
@@ -13,9 +16,6 @@ public class Palindrome {
         System.out.println("\nNb. Palindrome adalah kata, frasa, angka, atau rangkaian simbol yang dibaca sama dari depan dan belakang.");
         System.out.println("Contoh palindrom adalah kodok, radar, taat, madam, racecar, dan 22/02/2022\n");
 
-        // INISIALISASI
-        TextGame game = new FancyTextGame();
-        boolean lanjutin = true;
 
         // LOOP UTAMA
         do {
